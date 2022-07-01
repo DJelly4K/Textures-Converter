@@ -47,7 +47,7 @@ jobs:
     needs: get-pack-info
     permissions: 
       contents: read
-    timeout-minutes: 30
+    timeout-minutes: 60
     outputs:
       run_id: ${{ steps.get-pack-info.outputs.pack_url }}
     steps:
@@ -120,7 +120,7 @@ jobs:
 
             If you notice issues with the converted files, please refer to the action log for errors and open a bug report if you believe there is an issue with the converter. This issue will be closed automatically.
 
-            [1]: https://github.com/Kas-tle/java2bedrock.sh/actions/runs/${{ github.run_id}}
+            [1]: https://github.com/DJelly4K/Textures-Converter/actions/runs/${{ github.run_id}}
           reactions: 'rocket'
       - name: Close Issue
         uses: peter-evans/close-issue@v2
@@ -149,7 +149,7 @@ jobs:
 
             If you believe this is an issue with the converter. please open a bug report. This issue will be closed automatically.
 
-            [1]: https://github.com/Kas-tle/java2bedrock.sh/actions/runs/${{ github.run_id}}
+            [1]: https://github.com/DJelly4K/Textures-Converter/actions/runs/${{ github.run_id}}
           reactions: 'x'
       - name: Close Issue
         uses: peter-evans/close-issue@v2
