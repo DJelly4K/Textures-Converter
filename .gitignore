@@ -1,6 +1,7 @@
 target/
 *.zip
 config.json
+test_config.json
 pack.png
 pack.mcmeta
 assets/
@@ -8,3 +9,6 @@ parents.json
 *.csv
 *.temp
 spritesheet.json
+item_mappings.json
+item_texture.json 
+spritesheet/
